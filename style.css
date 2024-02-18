@@ -1,0 +1,68 @@
+@font-face {font-family: Gabarito; src: url(./Gabarito/Gabarito.ttf);}
+@font-face {font-family: Rokkitt; src: url(./Rokkitt/Rokkitt.ttf);}
+
+body {
+    background: rgb(30, 15, 45);
+    color: rgb(240, 255, 255);
+    font: 48px Rokkitt;
+    /* overflow: hidden; */
+}
+a {
+    color: rgb(240, 255, 255);
+    text-decoration-color: rgb(240, 255, 255);
+    
+    transition: 256ms;
+} a:hover {font-size: 120%; background: rgb(240, 255, 255); color: rgb(30, 15, 45);padding: 1rem;}
+
+.banner {
+    background-image: url(./content/banner.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.title {
+    font: 900 8rem Gabarito;
+
+    transition: 1s;
+}
+.subtitle {
+    font: 4rem Gabarito;
+
+    transition: 1s;
+}
+
+.icon {height: 48px; transition: 1s;}
+.icon:hover {scale: 1.2;}
+
+nav {
+    position: absolute;
+    left: 25vw;
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    opacity: 0%;
+
+    transition: 1s;
+}
+
+section {
+    padding: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 100px;
+}
+section img {height: 512px;}
+
+footer {
+    font-size: 21px;
+    padding: 2rem;
+}
+
+.movable {
+    position: relative;
+}
